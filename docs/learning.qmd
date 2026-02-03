@@ -1,0 +1,33 @@
+---
+title: "Reproducible Document"
+author: "LKT/rostools"
+format: html
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+## About me
+
+- Lisbeth Koch Thomsen
+- MBH lab, SDU
+
+**Love dogs** 
+*time*
+
+## Simple code
+
+```{r}
+3 * 3
+```
+
+
+## Writing R code
+
+2 + 2
+
+```{r}
+2 + 2
+```
+
