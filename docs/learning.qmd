@@ -60,4 +60,24 @@ geom_histogram(na.rm = FALSE)
 
 See @fig-bmi-histo
 
+## Exercise: discrete plots
 
+```{r}
+#| fig-cap: "Cool figure caption about glykemi"
+#| label: fig-group-bar
+ggplot(post_meal_data, aes(x = glykemi)) +
+  geom_bar()
+```
+
+See @fig-group-bar above for a cool plot!
+
+
+
+```{r}
+#| fig-cap: "Cool figure caption about Group"
+#| label: fig-groupgroup-bar
+ggplot(post_meal_data, aes(x = Group)) +
+  geom_bar()
+```
+
+See @fig-groupgroup-bar above for a cool plot!
