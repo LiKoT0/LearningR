@@ -81,3 +81,11 @@ ggplot(post_meal_data, aes(x = Group)) +
 ```
 
 See @fig-groupgroup-bar above for a cool plot!
+
+## Plotting two discrete variables
+
+```{r}
+ggplot(post_meal_data, aes(x = Group, fill = as.character(glykemi))) + 
+  geom_bar(position = position_dodge())
+```
+
