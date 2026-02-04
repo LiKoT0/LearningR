@@ -49,3 +49,15 @@ post_meal_data
 glimpse(post_meal_data)
 ```
 
+## Plot one continuous variable
+
+```{r}
+#| fig-cap: "Write your figure caption here eg. Distribution of BMI"
+#| label: fig-bmi-histo
+ggplot(post_meal_data, aes(x = BMI)) + 
+geom_histogram(na.rm = FALSE)
+```
+
+See @fig-bmi-histo
+
+
