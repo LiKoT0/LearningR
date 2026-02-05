@@ -353,4 +353,39 @@ tidied_post_meal_data |>
   group_by(Group) |>
   summarise(mean_age = mean(Age), mean_BMI = mean(BMI)) |>
   ungroup()
+
+tidied_post_meal_data |>
+  group_by(Group) |>
+  summarise(mean_age = mean(Age), mean_BMI = mean(BMI)) |>
+  ungroup() |>
+  knitr::kable()
+
+tidied_post_meal_data |>
+  group_by(Group) |>
+  summarise(mean_age = round(mean(Age), 1), mean_BMI = round(mean(BMI), 1)) |>
+  ungroup() |>
+  knitr::kable()
+
+tidied_post_meal_data |>
+  group_by(Group) |>
+  summarise("Mean age (yrs)" = round(mean(Age), 1), "Mean BMI (kg/m^2^)" = round(mean(BMI), 1)) |>
+  ungroup() |>
+  knitr::kable()
 ```
+
+```{r}
+#| label: tbl-mean-age-bmi
+#| tbl-cap: "Mean values of Age and BMI for each group"
+tidied_post_meal_data |>
+  group_by(Group) |>
+  summarise("Mean age (yrs)" = round(mean(Age), 1), "Mean BMI (kg/m^2^)" = round(mean(BMI), 1)) |>
+  ungroup() |>
+  knitr::kable()
+```
+se en fed tabel jeg har lavet @tbl-mean-age-bmi
+
+
+
+
+
+
